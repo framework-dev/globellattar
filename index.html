@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8" /><title>Globel Lattar</title>
+<style>* {padding: 1vw;width: 40vw;}</style></head>
+<body><p>ENVELOPE: globellattar.programmatology.com</p>
+<textarea id="t" rows="13" cols="61">
+When did we stop enclosing mail in envelopes? Part of me
+answers 2004 when Gmail hit, and we swapped our envelopes
+for the service itself, letting service providers read 
+through & into what email barely ever enclosed in the first 
+place, until basically, it all ended up in the models.
+CONFOUND THEM!
+What is The simplest way to do this? The simplest envelope?
+Globally? Perhaps just swapping the two letters that are 
+most frequent across all the alphabetic, now networked,
+languages in the global world of textuality.
+Press Shift+Enter to replace and seal this admittedly paper
+thin wrapper. You’ll still be able to READ. Use this text
+area to edit your msgs. Cut and paste your globel lattars.
+</textarea><p id="l"></p>
+<script>const t=document.getElementById("t");
+t.addEventListener("keydown",(event)=>{
+if (event.key === "Enter" && event.shiftKey) {
+event.preventDefault();gl(t.value);}});
+function gl(t) {document.getElementById("l").innerHTML=t.
+replace(/a/g,"__a__").replace(/e/g,"a").
+replace(/__a__/g,"e").replace(/\n/g,"<br>");}</script>
+</body></html>
